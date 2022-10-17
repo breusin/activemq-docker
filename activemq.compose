@@ -5,6 +5,7 @@ services:
     image: 'activemq:latest'
     ports:
       - '0.0.0.0:25000:8161'
+      - '0.0.0.0:25100:61616'
     volumes:
       - 'activemq_data:/opt/app'
     command: 'sh -c /opt/app/startup.sh'
@@ -13,6 +14,7 @@ services:
     image: 'activemq:latest'
     ports:
       - '0.0.0.0:25001:8161'
+      - '0.0.0.0:25101:61616'
     volumes:
       - 'activemq_data:/opt/app'
     command: 'sh -c /opt/app/startup.sh'
@@ -21,6 +23,7 @@ services:
     image: 'activemq:latest'
     ports:
       - '0.0.0.0:25002:8161'
+      - '0.0.0.0:25102:61616'
     volumes:
       - 'activemq_data:/opt/app'
     command: 'sh -c /opt/app/startup.sh'
@@ -29,6 +32,7 @@ services:
     image: 'activemq:latest'
     ports:
       - '0.0.0.0:25003:8161'
+      - '0.0.0.0:25103:61616'
     volumes:
       - 'activemq_data:/opt/app'
     command: 'sh -c /opt/app/startup.sh'
